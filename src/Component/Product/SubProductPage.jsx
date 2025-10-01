@@ -33,7 +33,7 @@ function SubProducts() {
     // ✅ Fetch extra subproducts
     useEffect(() => {
         axios
-            .get("https://backendvimalagro.onrender.com/api/extrasubproducts")
+            .get("https://vimalagro-backend.onrender.com/api/extrasubproducts")
             .then((res) => {
                 setExtraSubProducts(res.data || []);
             })
@@ -43,7 +43,7 @@ function SubProducts() {
     // ✅ Fetch extra subheadings
     useEffect(() => {
         axios
-            .get("https://backendvimalagro.onrender.com/api/heading")
+            .get("https://vimalagro-backend.onrender.com/api/heading")
             .then((res) => {
                 setExtraSubheading(res.data || []);
             })
@@ -53,7 +53,7 @@ function SubProducts() {
     // ✅ Fetch button visibility
     useEffect(() => {
         axios
-            .get("https://backendvimalagro.onrender.com/view/btn")
+            .get("https://vimalagro-backend.onrender.com/view/btn")
             .then((res) => {
                 setIsVisible(res.data?.isVisible || false);
             })
@@ -65,7 +65,7 @@ function SubProducts() {
         const FetchProduct = async () => {
             try {
                 const res = await axios.get(
-                    "https://backendvimalagro.onrender.com/api/products"
+                    "https://vimalagro-backend.onrender.com/api/products"
                 );
                 setSubProduct(res.data || []);
             } catch (err) {

@@ -15,7 +15,7 @@ function ProductSlider() {
     // ✅ Fetch visibility toggle
     useEffect(() => {
         axios
-            .get("https://backendvimalagro.onrender.com/view/btn")
+            .get("https://vimalagro-backend.onrender.com/view/btn")
             .then((res) => {
                 setIsVisible(res.data?.isVisible || false);
             })
@@ -26,7 +26,7 @@ function ProductSlider() {
     const FetchProduct = async () => {
         try {
             const res = await axios.get(
-                "https://backendvimalagro.onrender.com/api/products"
+                "https://vimalagro-backend.onrender.com/api/products"
             );
             setSubProduct(res.data || []);
         } catch (err) {

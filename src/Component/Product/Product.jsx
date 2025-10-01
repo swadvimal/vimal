@@ -9,7 +9,7 @@ function Product() {
   useEffect(() => {
     const fetchBanner = async () => {
       try {
-        const res = await axios.get("https://backendvimalagro.onrender.com/productbanner");
+        const res = await axios.get("https://vimalagro-backend.onrender.com/productbanner");
         if (res.data && res.data.length > 0) {
           setBanner(res.data[0]); // ✅ take the first object
         }

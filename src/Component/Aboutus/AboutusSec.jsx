@@ -8,7 +8,7 @@ import Companylogo from "./Companylogo";
 import Principals from "./Principals";
 import axios from "axios";
 
-const API_URL = "https://backendvimalagro.onrender.com/vimalabout";
+const API_URL = "https://vimalagro-backend.onrender.com/vimalabout";
 
 function AboutusSec() {
   const [aboutImages, setAboutImages] = useState([]);
@@ -38,7 +38,7 @@ function AboutusSec() {
   useEffect(() => {
     const fetchBanner = async () => {
       try {
-        const res = await axios.get("https://backendvimalagro.onrender.com/aboutbanner");
+        const res = await axios.get("https://vimalagro-backend.onrender.com/aboutbanner");
         if (res.data && res.data.length > 0) {
           setBanner(res.data[0]); // ✅ take the first object
         }

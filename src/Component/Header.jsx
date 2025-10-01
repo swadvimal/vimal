@@ -15,7 +15,7 @@ function Header() {
     const FetchProduct = async () => {
         try {
             const res = await axios.get(
-                "https://backendvimalagro.onrender.com/api/products"
+                "https://vimalagro-backend.onrender.com/api/products"
             );
             setProducts(res.data || []);
 

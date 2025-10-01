@@ -15,7 +15,7 @@
 
 //     const FetchProduct = async () => {
 //         try {
-//             const res = await axios.get("https://backendvimalagro.onrender.com/api/blogs");
+//             const res = await axios.get("https://vimalagro-backend.onrender.com/api/blogs");
 //             setRecipeSections(res.data);
 //         } catch (err) {
 //             console.error("Error fetching products:", err);
@@ -199,7 +199,7 @@ function Recepie() {
 
     const FetchProduct = async () => {
         try {
-            const res = await axios.get("https://backendvimalagro.onrender.com/api/blogs");
+            const res = await axios.get("https://vimalagro-backend.onrender.com/api/blogs");
             setRecipeSections(res.data);
         } catch (err) {
             console.error("Error fetching products:", err);

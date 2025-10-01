@@ -12,7 +12,7 @@ function HomeAbout() {
     useEffect(() => {
         const fetchAboutUs = async () => {
             try {
-                const res = await axios.get("https://backendvimalagro.onrender.com/aboutus");
+                const res = await axios.get("https://vimalagro-backend.onrender.com/aboutus");
                 if (res.data && res.data.length > 0) {
                     setAboutImages(res.data[0]); // take first object
                 }

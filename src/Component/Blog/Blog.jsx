@@ -20,7 +20,7 @@ function Blog() {
     // Fetch Blogs
     const FetchProduct = async () => {
         try {
-            const res = await axios.get("https://backendvimalagro.onrender.com/api/blogs");
+            const res = await axios.get("https://vimalagro-backend.onrender.com/api/blogs");
             setRecipeSections(res.data);
         } catch (err) {
             console.error("Error fetching products:", err);
@@ -35,7 +35,7 @@ function Blog() {
     useEffect(() => {
         const fetchBanner = async () => {
             try {
-                const res = await axios.get("https://backendvimalagro.onrender.com/blogbanner");
+                const res = await axios.get("https://vimalagro-backend.onrender.com/blogbanner");
                 if (res.data && res.data.length > 0) {
                     setBanner(res.data[0]);
                 }

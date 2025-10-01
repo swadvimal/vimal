@@ -17,7 +17,7 @@ function HomeCategory() {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await axios.get("https://backendvimalagro.onrender.com/categories");
+        const res = await axios.get("https://vimalagro-backend.onrender.com/categories");
 
         if (res.data && res.data.length > 0) {
           // Flatten out categories from the response

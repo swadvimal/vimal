@@ -24,7 +24,7 @@ function Counter() {
     };
 
     useEffect(() => {
-        fetch("https://backendvimalagro.onrender.com/counter")
+        fetch("https://vimalagro-backend.onrender.com/counter")
             .then((res) => res.json())
             .then((data) => {
                 if (data && data.length > 0 && data[0].value && data[0].value.length > 0) {

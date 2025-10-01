@@ -9,7 +9,7 @@ function Testimonial() {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const res = await axios.get('https://backendvimalagro.onrender.com/testimonial');
+        const res = await axios.get('https://vimalagro-backend.onrender.com/testimonial');
         setTestimonials(res.data);
       } catch (error) {
         console.error('Error fetching testimonials:', error);

@@ -10,7 +10,7 @@ function Companylogo() {
   useEffect(() => {
     const fetchLogos = async () => {
       try {
-        const res = await axios.get("https://backendvimalagro.onrender.com/leaderlogo");
+        const res = await axios.get("https://vimalagro-backend.onrender.com/leaderlogo");
 
         if (Array.isArray(res.data)) {
           setLogos(res.data);
@@ -24,7 +24,7 @@ function Companylogo() {
 
     const fetchStory = async () => {
       try {
-        const res = await axios.get("https://backendvimalagro.onrender.com/ourstory");
+        const res = await axios.get("https://vimalagro-backend.onrender.com/ourstory");
         if (Array.isArray(res.data)) {
           setStoryData(res.data);
         } else if (res.data.data && Array.isArray(res.data.data)) {

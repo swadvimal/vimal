@@ -123,7 +123,7 @@ function Principals() {
     const [principles, setPrinciples] = useState([]);
 
     useEffect(() => {
-        fetch("https://backendvimalagro.onrender.com/principle")
+        fetch("https://vimalagro-backend.onrender.com/principle")
             .then((res) => res.json())
             .then((data) => setPrinciples(data))
             .catch((err) => console.error("Error fetching principles:", err));

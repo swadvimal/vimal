@@ -17,7 +17,7 @@ function SpecificSubPro() {
     const FetchProduct = async () => {
         try {
             const res = await axios.get(
-                "https://backendvimalagro.onrender.com/api/products"
+                "https://vimalagro-backend.onrender.com/api/products"
             );
             setProducts(res.data || []);
         } catch (err) {
@@ -28,7 +28,7 @@ function SpecificSubPro() {
     // ✅ Fetch extra subproducts
     const FetchExtraSub = async () => {
         try {
-            const res = await axios.get("https://backendvimalagro.onrender.com/api/extrasubproducts");
+            const res = await axios.get("https://vimalagro-backend.onrender.com/api/extrasubproducts");
             setExtraSubProducts(res.data || []);
         } catch (err) {
             console.error("Error fetching extra subproducts:", err);

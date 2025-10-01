@@ -11,7 +11,7 @@ function Certificates() {
 
     const fetchCertificates = async () => {
       try {
-        const res = await axios.get("https://backendvimalagro.onrender.com/certificate");
+        const res = await axios.get("https://vimalagro-backend.onrender.com/certificate");
         if (res.data && res.data.length > 0) {
           setCertificates(res.data);
         }

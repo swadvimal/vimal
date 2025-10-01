@@ -6,7 +6,7 @@ function Faq() {
   const [faqList, setFaqList] = useState([]);
 
   useEffect(() => {
-    fetch("https://backendvimalagro.onrender.com/faq")
+    fetch("https://vimalagro-backend.onrender.com/faq")
       .then((res) => res.json())
       .then((data) => {
         setFaqList(data.data);

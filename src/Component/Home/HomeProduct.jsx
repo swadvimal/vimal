@@ -85,7 +85,7 @@ function HomeProduct() {
 
   const FetchProduct = async () => {
     try {
-      const res = await axios.get("https://backendvimalagro.onrender.com/api/products");
+      const res = await axios.get("https://vimalagro-backend.onrender.com/api/products");
       setProducts(res.data);
     } catch (err) {
       console.error("Error fetching products:", err);
