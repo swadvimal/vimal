@@ -1,0 +1,68 @@
+/* ContactInfo start */
+.contactinfo_bg {
+  width: 100%;
+  padding: 10px 0;
+  background-image: url("https://www.tharayilpower.com/static/media/testi_bg.f45dc51be227a3befcbe.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.countericoncontact {
+  font-size: 50px !important;
+}
+.inputplaceholder::placeholder {
+  font-size: 13px;
+}
+.inputplaceholder:focus-visible {
+  border: 0px !important;
+  outline: 1px solid black !important;
+}
+/* ContactInfo end */
+
+/* Map start */
+.contact_map {
+  min-height: 300px;
+}
+@media (max-width: 576px) {
+  .contact_map {
+    min-height: 350px !important;
+  }
+}
+/* Map end */
+
+/* ContactPage start */
+/* .landingimg_contact {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.landingimg-img_contact {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.lendingshadow_contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #240000c0 !important;
+  box-shadow: inset 0 0 100px 20px #000;
+  pointer-events: none;
+}
+@media (min-width: 768px) {
+  .landingimg_contact {
+    height: 55vh;
+    margin-top: 75px;
+  }
+  .landingimg-img_contact {
+    height: 100%;
+  }
+} */
+/* ContactPage end */
